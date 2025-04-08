@@ -3,3 +3,149 @@
 body{
     font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 }
+
+/* section 1 css */
+.kv{
+    padding: 209px 0 99px 0;
+    position: relative;
+    height: 100vh;
+}
+
+.kv::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100vh;
+    background: #1f88e6;
+    right: 0;
+    top: 0;
+    border-radius: 0 0 0 200px;
+    z-index: -1;
+}
+
+.kv-top-img img{
+    width: 908px;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+
+.kv-top-title h3{
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 140%;
+}
+
+.kv-top-title h2{
+    font-size: 3.5rem;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 140%;
+}
+
+.kv-top-title span{
+    background: #1f88e6;
+    color: #fff;
+}
+
+/* section 2 css */
+.sec02{
+    padding: 150px 0;
+    background: #444444;
+}
+
+.sec02-title{
+    color: #fff;
+    font-size: 3.5rem;
+    margin-bottom: 148px;
+}
+
+.sec02-text{
+    color: #000;
+}
+
+.bg-w{
+    background-color: #fff;
+    padding: 36px 30px 72px 30px;
+    border-radius: 15px;
+}
+
+.sec02-icon img{
+    margin-bottom: 40px;
+}
+
+.sec02-text h3{
+    margin-bottom: 25px;
+    letter-spacing: 3%;
+    font-size: 1.9rem;
+    font-weight: 700;
+}
+
+.sec02-text p{
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+#last-image{
+    width: 66px;
+    height: 66px;
+}
+@media(max-width: 768px){
+    .kv-top-img img{
+        width: 100%;
+        position: static;
+        margin-top: 80px;
+    }
+
+    .kv .container{
+        max-width: 100%;
+    }
+}
+
+@media(max-width: 540px){
+    .kv-top-title h3{
+        font-size: 1.5rem;
+        font-weight: 600;
+        letter-spacing: -0.025em;
+        line-height: 140%;
+        color: #fff;
+    }
+    
+    .kv-top-title h2{
+        font-size: 2.2rem;
+        font-weight: 600;
+        letter-spacing: -0.025em;
+        line-height: 140%;
+        color: #fff;
+    }
+
+    .kv::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 50vh;
+        background: #1f88e6;
+        right: 0;
+        top: 0;
+        border-radius: 0 0 0 200px;
+        z-index: -1;
+    }
+
+    .col-md-5{
+        padding-left: 130px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px 0;
+    }
+
+    .bg-w{
+        padding: 5px 0;
+    }
+
+}
